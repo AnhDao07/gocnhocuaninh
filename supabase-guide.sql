@@ -116,7 +116,7 @@ BEGIN
     CASE 
       -- Assign first signup or specific email domain as administrator
       WHEN new.email = 'goodgirldao@gmail.com' THEN 'admin'
-      WHEN new.email LIKE '%@gocnhoninh.vn' THEN 'admin'
+      WHEN new.email LIKE 'anhdao2007' THEN 'admin'
       ELSE 'visitor'
     END
   );
