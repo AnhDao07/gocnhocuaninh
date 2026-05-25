@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "FzJaapokki";
+  src: url("/fonts/Fz-Jaapokki-Enchance.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --color-vintage-dark: #0f0e0d;
+  --color-vintage-paper: #1a1816;
+  --color-vintage-sepia: #2a2622;
+  --color-vintage-gold: #c5a16f;
+  --color-vintage-sage: #919c8d;
+  --color-vintage-text: #d4cebd;
+  --color-vintage-gray: #a19c8d;
+}
+
+/* Base style overrides */
+body {
+  background-color: #0f0e0d;
+  color: #d4cebd;
+  font-family: "Georgia", "Times New Roman", Times, serif;
+  scrollbar-color: #2a2622 #0f0e0d;
+}
+
+.logo-font {
+  font-family: "FzJaapokki", "Georgia", "Times New Roman", serif;
+}
+
+.story-font {
+  font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+
+/* Rich text paragraph spacing for reading view */
+.chapter-content p {
+  margin-bottom: 1.5rem;
+  line-height: 2;
+  text-indent: 1.5rem;
+  font-size: 1.15rem;
+  text-align: justify;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f0e0d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2622;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c5a16f;
+}
+
